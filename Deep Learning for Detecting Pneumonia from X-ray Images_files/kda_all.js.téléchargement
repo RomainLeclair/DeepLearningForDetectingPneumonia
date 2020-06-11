@@ -1,0 +1,82 @@
+function kda_top () {
+var path=kpath + 'aps/';
+var ts=new Date().getTime();
+var ms=new Date().getMilliseconds();
+var Top_nam=new Array(); var Top_ext=new Array(); var Top_wid=new Array(); var Top_hgt=new Array();
+var Top_alt=new Array(); var Top_txt=new Array(); var Top_url=new Array(); var Top_wgt=new Array(); var wgt=0;
+wgt+=1; Top_wgt[1]=wgt;
+Top_nam[1]="t-que-19m12-gmma"; Top_ext[1]=".jpg"; Top_wid[1]=750; Top_hgt[1]=100;
+Top_url[1]='https://smith.queensu.ca/grad_studies/mma/program/global-mma/landing.php?utm_source=KDNuggetsBanner&utm_medium=Display&utm_content=GMMA&utm_campaign=GMMA2021';
+Top_txt[1]="Global Master of Management Analytics: The Essential Degree for the World of Data";
+Top_alt[1]="txt";
+wgt+=1; Top_wgt[2]=wgt;
+Top_nam[2]="t-rap-20m06-depth"; Top_ext[2]=".jpg"; Top_wid[2]=750; Top_hgt[2]=100;
+Top_url[2]='https://info.rapidminer.com/l/32612/2020-05-28/8v76s6';
+Top_txt[2]="<font size=+1>Get Started with RapidMiner. Depth for Data Scientists, Simplified for Everyone Else</font>";
+Top_alt[2]="Get started with RapidMiner";
+wgt+=1; Top_wgt[3]=wgt;
+Top_nam[3]="t-arr-20m06-fedlearn"; Top_ext[3]=".jpg"; Top_wid[3]=750; Top_hgt[3]=100;
+Top_url[3]='https://federatedlearningconference.com/';
+Top_txt[3]="<font size=+1>Federated and Distributed Machine Learning, Jun 18-19, Virtual Conference</font>";
+Top_alt[3]="Federated and Distributed Machine Learning, Jun 18-19, Virtual Conference";
+wgt+=1; Top_wgt[4]=wgt;
+Top_nam[4]="t-jmp-20m04-stips"; Top_ext[4]=".jpg"; Top_wid[4]=750; Top_hgt[4]=100;
+Top_url[4]='https://www.jmp.com/en_us/online-statistics-course.html?utm_source=kdnuggetshp&utm_medium=advertisement&utm_campaign=stips';
+Top_txt[4]="<font size=+1>Free Online Statistics Course. Build practical skills in using data to solve problems</font>";
+Top_alt[4]="JMP";
+var rtop=Math.random()*4;
+var n_ad=1; while (Top_wgt[n_ad]<rtop) {n_ad++};
+var out='<table border=0 cellspacing=5 cellpadding=20 width=990><tr><td valign=top align=center width=750>';
+  var whb=' width="90%" border=0';
+  if (Top_wid[n_ad] == 1) {
+      out+=Top_url[n_ad];
+      whb=' width=1 height=1';
+  } else {
+      out+='<a href=' + Top_url[n_ad] + ' onclick="ga(\'send\',\'pageview\',\'/zt/' + Top_nam[n_ad] + '\');" target=_blank>';
+  }
+  out+='<img src=' + path + Top_nam[n_ad] + Top_ext[n_ad] + '?ms=' + ms + whb + ' alt="' + Top_alt[n_ad] + '">';
+  out+='<br><b>' + Top_txt[n_ad] + '</b></a></td>';
+  out+='</tr></table><br>';document.writeln(out);}
+function kda_sid_init() {
+var ts=new Date().getTime();
+Sid_nam=new Array(); Sid_ext=new Array(); Sid_txt=new Array(); Sid_url=new Array();
+Sid_alt=new Array(); Sid_wid=new Array(); Sid_hgt=new Array(); Sid_wgt=new Array(); var wgt=0;
+wgt+=1; Sid_wgt[1]=wgt;
+Sid_nam[1]="e-sas-20m05"; Sid_ext[1]=".gif"; Sid_wid[1]=1; Sid_hgt[1]=1;
+Sid_url[1]='<ins class="dcmads" style="display:inline-block;width:300px;height:250px" data-dcm-placement="N6626.289580.KDNUGGETS.COM/B23482492.272920048" data-dcm-rendering-mode="iframe" data-dcm-https-only data-dcm-resettable-device-id="" data-dcm-app-id=""> <script src="https://www.googletagservices.com/dcm/dcmads.js"></script></ins>';
+Sid_txt[1]="Discover SAS<br>";
+Sid_alt[1]="SAS";
+wgt+=1; Sid_wgt[2]=wgt;
+Sid_nam[2]="e-dom-20m02-gmq"; Sid_ext[2]=".png"; Sid_wid[2]=300; Sid_hgt[2]=250;
+Sid_url[2]='https://www.dominodatalab.com/resources/gartner-magic-quadrant-data-science-platforms/?utm_campaign=Gartner%20Magic%20Quadrant%202020&utm_source=kdnuggets&utm_medium=banner';
+Sid_txt[2]="Gartner 2020 MQ<br>Data Science and<br>Machine Learning<br>Read the Report";
+Sid_alt[2]="Gartner 2020 MQ Data Science and<br>Machine Learning<br>Read the Report";
+wgt+=1; Sid_wgt[3]=wgt;
+Sid_nam[3]="e-pra-20m06-tdi"; Sid_ext[3]=".jpg"; Sid_wid[3]=300; Sid_hgt[3]=250;
+Sid_url[3]='https://www.thedataincubator.com/fellowship.html';
+Sid_txt[3]="The Best<br>Data Science Bootcamp<br>Apply Now";
+Sid_alt[3]="The Best Data Science Bootcamp<br>Apply Now";
+wgt+=1; Sid_wgt[4]=wgt;
+Sid_nam[4]="e-kni-20m06-jun10"; Sid_ext[4]=".jpg"; Sid_wid[4]=300; Sid_hgt[4]=250;
+Sid_url[4]='https://www.knime.com/knime-analytics-platform-for-data-scientists-webinar-kd-americas?utm_source=kdnuggets&utm_medium=banner&utm_campaign=knime-intro-webinar';
+Sid_txt[4]="ETL and Advanced ML<br>Open Source<br>No Code Required<br>Jun 10<br>Register Now<br>KNIME<br>";
+Sid_alt[4]="ETL and Advanced ML Open Source<br>No Code Required<br>Jun 10<br>Register Now<br>KNIME<br>";
+}
+function kda_sid_write (nads) {
+  if (nads != 0) {nads=1};
+  var path=kpath + 'aps/';
+  var ms=new Date().getMilliseconds(); var adshown=new Array();
+  for (adpos=1; adpos<=nads; adpos++) {
+    do { var adn=1; var re=Math.random()*4;
+      while (Sid_wgt[adn]<re) {adn++};
+    } while (adshown[adn]==1);
+    if (Sid_wid[adn]==1) { s=Sid_url[adn]; s=s.replace('ze/e-','ze/' + nads + adpos + ':e-'); 
+      s+='<img src=' + path + Sid_nam[adn] + '.gif?ms' + ms + ' width=1 height=1 border=0>';
+    } else {
+      s='<a href=' + Sid_url[adn] + ' onclick="ga(\'send\',\'pageview\',\'/ze/' + nads + adpos + ':' + Sid_nam[adn] + '\');" target=_blank>';
+      s+='<img src=' + path + Sid_nam[adn] + Sid_ext[adn] + '?ms' + ms +  ' width=' + Sid_wid[adn] + ' height=' + Sid_hgt[adn] + ' border=0 alt="' + Sid_alt[adn] + '">';}
+    s+='<br><b>' + Sid_txt[adn] + '</b></a><br>';
+    if (nads>1) {s+='<br><hr class="grey-line"><br>'};
+    document.writeln(s); adshown[adn]=1;
+  }
+}
